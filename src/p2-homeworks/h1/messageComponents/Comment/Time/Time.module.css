@@ -1,0 +1,9 @@
+.item {
+    grid-area: time;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+}
+.time {
+    grid-row: 2;
+    color: lightslategray;
+}

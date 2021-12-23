@@ -1,0 +1,14 @@
+.item {
+    grid-area: text;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    padding-bottom: 5px;
+}
+
+.name {
+    color: skyblue;
+}
+
+.msg {
+    color: beige;
+}
