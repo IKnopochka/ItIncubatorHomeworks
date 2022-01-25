@@ -63,7 +63,7 @@ function HW4() {
                     Life is a nightmare that prevents one from sleeping {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
 
-                {/*// onChange тоже должен работать*/}
+                {/*//onChange тоже должен работать*/}
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
 
