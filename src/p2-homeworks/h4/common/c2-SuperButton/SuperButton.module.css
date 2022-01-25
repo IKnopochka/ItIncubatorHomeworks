@@ -1,7 +1,11 @@
 .default {
-
+    background: teal;
+    color: #b2fcff;
+    margin: 5px;
 }
 
 .red {
-    background: red;
+    background: maroon;
+    color: white;
+    border: 5px solid maroon;
 }
