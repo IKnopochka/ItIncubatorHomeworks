@@ -7,11 +7,12 @@ import HW4 from '../../h4/HW4'
 function Junior() {
     return (
         <div>
-            <HW1/>
-            <HW2/>
-            <HW3/>
-            <HW4/>
-            {/*<HW6/>*/}
+            {/*<HW7/>*/}
+            {/*<HW8/>*/}
+            {/*<HW9/>*/}
+            {/*<HW10/>*/}
+            {/*<HW11/>*/}
+            {/*<HW12/>*/}
 
         </div>
     )
