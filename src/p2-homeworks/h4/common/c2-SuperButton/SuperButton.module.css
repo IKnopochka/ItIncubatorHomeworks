@@ -9,3 +9,13 @@
     color: white;
     border: 5px solid maroon;
 }
+
+a {
+    color: #b2fcff;
+    text-decoration:none
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
