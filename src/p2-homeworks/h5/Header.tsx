@@ -1,12 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 function Header() {
     return (
         <div>
-            <NavLink to={'/pre-junior'}>PRE_JUNIOR</NavLink>
-            <NavLink to={'/junior'}>JUNIOR</NavLink>
-            <NavLink to={'/junior-plus'}>JUNIOR_PLUS</NavLink>
+            <SuperButton><NavLink to={'/pre-junior'}>PRE_JUNIOR</NavLink></SuperButton>
+            <SuperButton><NavLink to={'/junior'}>JUNIOR</NavLink></SuperButton>
+            <SuperButton><NavLink to={'/junior-plus'}>JUNIOR_PLUS</NavLink></SuperButton>
         </div>
     )
 }
