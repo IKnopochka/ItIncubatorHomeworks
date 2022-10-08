@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 function Clock() {
-    debugger
     const [timerId, setTimerId] = useState<number>(0)
     const [date, setDate] = useState<Date>()
     const [show, setShow] = useState<boolean>(false)
