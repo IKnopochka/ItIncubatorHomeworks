@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/ItIncubatorHomeworks/static/css/main.bb06d2eb.css",
-    "main.js": "/ItIncubatorHomeworks/static/js/main.e9be919a.js",
+    "main.js": "/ItIncubatorHomeworks/static/js/main.b5ddbe4b.js",
+    "static/media/Spinner-1s-200px.svg": "/ItIncubatorHomeworks/static/media/Spinner-1s-200px.a0a660f8b434aad100c21735bf54f2dd.svg",
     "index.html": "/ItIncubatorHomeworks/index.html",
     "main.bb06d2eb.css.map": "/ItIncubatorHomeworks/static/css/main.bb06d2eb.css.map",
-    "main.e9be919a.js.map": "/ItIncubatorHomeworks/static/js/main.e9be919a.js.map"
+    "main.b5ddbe4b.js.map": "/ItIncubatorHomeworks/static/js/main.b5ddbe4b.js.map"
   },
   "entrypoints": [
     "static/css/main.bb06d2eb.css",
-    "static/js/main.e9be919a.js"
+    "static/js/main.b5ddbe4b.js"
   ]
 }
