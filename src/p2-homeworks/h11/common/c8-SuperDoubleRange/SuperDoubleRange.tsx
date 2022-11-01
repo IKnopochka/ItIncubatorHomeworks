@@ -1,150 +1,3 @@
-/*import React, {ChangeEvent, useCallback, useEffect, useRef, useState} from 'react'
-import s from './SuperDoubleRange.module.css'
-import {useRanger} from "react-ranger";
-
-type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value: [number, number]
-    // min, max, step, disable, ...
-}
-
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-
-        //         min, max, step, disable, ...
-    }
-) => {
-    // сделать самому, можно подключать библиотеки
-
-
-    const [values, setValues] = React.useState([value[0], value[1]]);
-    //const values = [value[0], value[1]]
-
-    const { getTrackProps, handles } = useRanger({
-        min: 0,
-        max: 100,
-        stepSize: 1,
-        values,
-        onChange: setValues
-    });
-
-    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-
-        onChangeRange && onChangeRange([+e.currentTarget.value, +e.currentTarget.value])
-    }
-
-    return (
-        <div >
-            <div
-                {...getTrackProps({
-                    style: {
-                        width: '200px',
-                        height: "4px",
-                        background: "#ddd",
-                        boxShadow: "inset 0 1px 2px rgba(0,0,0,.6)",
-                        borderRadius: "2px",
-                        margin: '10px'
-                    }
-                })}
-            >
-                {handles.map(({ getHandleProps }) => (
-                    <button
-                        {...getHandleProps({
-                            style: {
-                                width: "14px",
-                                height: "14px",
-                                outline: "none",
-                                borderRadius: "100%",
-                                background: "linear-gradient(to bottom, #eee 45%, #ddd 55%)",
-                                border: "solid 1px #888"
-                            }
-                        })}
-                    />
-                ))}
-            </div>
-            <pre
-                style={{
-                    display: "inline-block",
-                    textAlign: "left"
-                }}
-            >
-        <code>
-          {JSON.stringify({
-              values
-          })}
-        </code>
-      </pre>
-        </div>
-    );
-}
-
-export default SuperDoubleRange*/
-
-
-
-/*import React, {ChangeEvent, useCallback, useEffect, useRef, useState} from 'react'
-import s from './SuperDoubleRange.module.css'
-
-type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
-}
-
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-
-        //         min, max, step, disable, ...
-    }
-) => {
-    // сделать самому, можно подключать библиотеки
-
-
-
-    return (
-        <>
-
-        </>
-    )
-}
-
-export default SuperDoubleRange*/
-
-
-//////////////////
-
-/*import React, {ChangeEvent, useCallback, useEffect, useRef, useState} from 'react'
-import s from './SuperDoubleRange.module.css'
-
-type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
-}
-
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-
-        //         min, max, step, disable, ...
-    }
-) => {
-    // сделать самому, можно подключать библиотеки
-
-
-
-    return (
-        <>
-
-        </>
-    )
-}
-
-export default SuperDoubleRange*/
-
-/////////////////
 import React, {ChangeEvent, useCallback, useEffect, useRef, useState} from 'react'
 import s from './SuperDoubleRange.module.css'
 
@@ -160,17 +13,12 @@ type SuperDoubleRangePropsType = {
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
-        onChangeRange, value,
+        value,
         min, max,
         setValue1, setValue2
-
-        //         min, max, step, disable, ...
     }
 ) => {
     // сделать самому, можно подключать библиотеки
-
-    //const [minVal, setMinVal] = useState(min);
-    //const [maxVal, setMaxVal] = useState(max);
     const minValRef = useRef(min);
     const maxValRef = useRef(max);
     const range = useRef<HTMLDivElement>(null);
