@@ -6,7 +6,6 @@ import {AppStoreType} from "./bll/store";
 import loaderImg from './img/Spinner-1s-200px.svg'
 
 function HW10() {
-    debugger
     // useSelector, useDispatch
     const loading = useSelector<AppStoreType, boolean>(state => state.loading.loading)
     const dispatch = useDispatch()
@@ -14,7 +13,7 @@ function HW10() {
     const setLoading = () => {
         // dispatch
         // setTimeout
-        debugger
+
         dispatch(loadingAC(true));
 
         const timeBackDispatcher = () => {
