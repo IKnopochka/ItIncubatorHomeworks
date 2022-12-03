@@ -8,11 +8,11 @@ export const messageData = {
     time: '22:00',
 }
 
-function HW1() {
+function HW1_Old() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            Homework 1 Old
 
             {/*should work (должно работать)*/}
 
@@ -30,4 +30,4 @@ function HW1() {
     )
 }
 
-export default HW1
+export default HW1_Old

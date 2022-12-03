@@ -4,7 +4,7 @@ import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
-function HW4() {
+function HW4_OLD() {
     const [text, setText] = useState<string>('')
     const error = text ? '' : 'error'
 
@@ -22,7 +22,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            homeworks 4 OLD
 
             <div className={s.column}>
                 <SuperInputText
@@ -76,4 +76,4 @@ function HW4() {
     )
 }
 
-export default HW4
+export default HW4_OLD
