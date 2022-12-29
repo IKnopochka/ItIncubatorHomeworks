@@ -1,4 +1,5 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes, ReactNode, useState} from 'react'
+import SuperInputText from "../../../h4/common/c1-SuperInputText/SuperInputText";
 //import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
 
 // тип пропсов обычного инпута
@@ -47,7 +48,7 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
 
     return (
         <div>
-            <input placeholder={'Type Here'} type={"text"} onChange={e => onChangeTextCallback(e.currentTarget.value)}/>
+            <SuperInputText placeholder={'Type Here'} type={"text"} onChange={e => onChangeTextCallback(e.currentTarget.value)}/>
         </div>
 
     )
