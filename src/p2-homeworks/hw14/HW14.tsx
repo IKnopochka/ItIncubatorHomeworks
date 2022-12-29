@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import s2 from '../../s1-main/App.module.css'
 import s from './HW14.module.css'
 import axios from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
@@ -35,11 +34,14 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
+                if (res) {
+                    console.log(res.data.techs)
+                    setTechs(res.data.techs)
+                }
                 //
             })
+            .finally(() => setLoading(false))
     }
 
     const onChangeText = (value: string) => {
@@ -47,13 +49,14 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
+         setSearchParams({techs: value})
 
         //
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
+        console.log(params)
         sendQuery(params.find || '')
         setFind(params.find || '')
     }, [])
@@ -66,9 +69,9 @@ const HW14 = () => {
 
     return (
         <div id={'hw14'}>
-            <div className={s2.hwTitle}>Homework #14</div>
+            <div >Homework #14</div>
 
-            <div className={s2.hw}>
+            <div >
                 <SuperDebouncedInput
                     id={'hw14-super-debounced-input'}
                     value={find}
