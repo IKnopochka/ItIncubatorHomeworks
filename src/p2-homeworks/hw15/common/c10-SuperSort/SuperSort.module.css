@@ -1,0 +1,11 @@
+.homework{
+    position: relative;
+}
+.icon{
+    width: 12px;
+    height: 12px;
+}
+
+.loading{
+    position: absolute;
+}

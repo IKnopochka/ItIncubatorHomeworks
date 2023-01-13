@@ -8,22 +8,27 @@ type SuperSelectPropsType = DefaultSelectPropsType & {
     onChangeOption?: (option: any) => void
 }
 
-const SuperSelect: React.FC<SuperSelectPropsType> = (
-    {
-        value,
-        options,
-        onChange, onChangeOption,
-        ...restProps
-    }
-) => {
-    const mappedOptions: any[] = options ? options.map((m, i) => (
-        <option value={m} selected={value === m}>
-            {m}
-        </option>
-    )) : []; // map options with key
+const SuperSelect: React.FC<SuperSelectPropsType> = ({
+                                                         options,
+                                                         className,
+                                                         onChange,
+                                                         onChangeOption,
+                                                         ...restProps}) => {
+    const mappedOptions: any[] = options
+        ? options.map((o) => (
+            <option
+                id={'hw7-option-' + o.id}
+                className={s.option}
+                key={o.id}
+                value={o.id}
+            >
+                {o.value}
+            </option>
+        ))
+        : [] // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        // onChange, onChangeOption
+        // делают студенты
         if (onChangeOption) {
             onChangeOption(e.currentTarget.value)
         }
@@ -32,15 +37,16 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         }
     }
 
-    return (
-        <div className={s.box}>
-            <select
-                    onChange={onChangeCallback}
-                    {...restProps}>
-                {mappedOptions}
-            </select>
-        </div>
+    const finalSelectClassName = s.select + (className ? ' ' + className : '')
 
+    return (
+        <select
+            className={finalSelectClassName}
+            onChange={onChangeCallback}
+            {...restProps}
+        >
+            {mappedOptions}
+        </select>
     )
 }
 

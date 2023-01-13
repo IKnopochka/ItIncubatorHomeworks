@@ -36,7 +36,6 @@ const HW14 = () => {
                 // делает студент
                 // сохранить пришедшие данные
                 if (res) {
-                    console.log(res.data.techs)
                     setTechs(res.data.techs)
                 }
                 //
@@ -56,7 +55,6 @@ const HW14 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        console.log(params)
         sendQuery(params.find || '')
         setFind(params.find || '')
     }, [])
@@ -68,7 +66,7 @@ const HW14 = () => {
     ))
 
     return (
-        <div id={'hw14'}>
+        <div id={'hw14'} className={s.main}>
             <div >Homework #14</div>
 
             <div>
