@@ -110,8 +110,7 @@ const HW15 = () => {
             <div>Homework #15</div>
 
             <div className={s.loading}>{idLoading && <CircularIndeterminate/>}</div>
-
-            <div>
+            <div>{!idLoading && <div>
                 <SuperPagination
                     page={page}
                     itemsCountForPage={count}
@@ -132,7 +131,9 @@ const HW15 = () => {
                 </div>
 
                 {mappedTechs}
-            </div>
+            </div>}</div>
+
+
         </div>
     )
 }
