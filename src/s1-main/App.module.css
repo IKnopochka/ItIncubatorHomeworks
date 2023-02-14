@@ -1,11 +1,15 @@
 .App {
     --header_height: 60px;
+
 }
 
 .hw {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .hwTitle {
-
+    font-family: cursive;
+    font-size: 20px;
+    justify-content: center;
 }
