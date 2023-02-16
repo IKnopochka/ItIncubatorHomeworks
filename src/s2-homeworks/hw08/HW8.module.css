@@ -6,6 +6,8 @@
 }
 
 .users {
+    border: 1px solid black;
+    width: 10rem;
 }
 
 .buttonsContainer {
@@ -15,10 +17,14 @@
 }
 
 .thead {
+    background-color: rgba(208, 206, 206, 0.73);
+
 }
 
 .nameCol {
+
 }
 
 .ageCol {
+
 }
