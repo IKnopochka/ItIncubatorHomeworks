@@ -45,13 +45,17 @@ const HW13 = () => {
             })
             .catch((e) => {
                 // дописать
-                if (e.response) {
+                console.log(e)
+
+                if (e.response.status !== 0) {
+
                     setCode("Ошибка " + e.response.status)
                     //setImage(!e.response.data.yourBody.success ? error500 : error400)
                     setImage(e.response.status === 400 ? error400 : error500)
                     setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
                 } else {
+                    console.error()
                     setCode(e.code)
                     setImage(errorUnknown)
                     setText(e.name)
