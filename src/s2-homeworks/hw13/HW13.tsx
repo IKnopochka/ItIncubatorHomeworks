@@ -37,11 +37,24 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
+                setText(res.data.errorText)
+                setInfo(res.data.info)
 
             })
             .catch((e) => {
                 // дописать
-
+                if(e.response) {
+                    setCode("Ошибка " + e.response.status)
+                    //setImage(!e.response.data.yourBody.success ? error500 : error400)
+                    setImage(e.response.status === 400 ? error400 : error500)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                } else {
+                    setCode(e.code)
+                    setImage(errorUnknown)
+                    setText(e.name)
+                    setInfo(e.message)
+                }
             })
     }
 
