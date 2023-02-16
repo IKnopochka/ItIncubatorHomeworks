@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/ItIncubatorHomeworks/static/css/main.0a555a8a.css",
-    "main.js": "/ItIncubatorHomeworks/static/js/main.373ba51b.js",
+    "main.css": "/ItIncubatorHomeworks/static/css/main.099bf8ba.css",
+    "main.js": "/ItIncubatorHomeworks/static/js/main.1c60537f.js",
     "static/js/787.66cb4309.chunk.js": "/ItIncubatorHomeworks/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/ItIncubatorHomeworks/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/ItIncubatorHomeworks/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/ItIncubatorHomeworks/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
+    "static/media/editIcon.svg": "/ItIncubatorHomeworks/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
     "static/media/checked.svg": "/ItIncubatorHomeworks/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/ItIncubatorHomeworks/index.html",
     "static/media/burger.svg": "/ItIncubatorHomeworks/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.0a555a8a.css.map": "/ItIncubatorHomeworks/static/css/main.0a555a8a.css.map",
-    "main.373ba51b.js.map": "/ItIncubatorHomeworks/static/js/main.373ba51b.js.map",
+    "main.099bf8ba.css.map": "/ItIncubatorHomeworks/static/css/main.099bf8ba.css.map",
+    "main.1c60537f.js.map": "/ItIncubatorHomeworks/static/js/main.1c60537f.js.map",
     "787.66cb4309.chunk.js.map": "/ItIncubatorHomeworks/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a555a8a.css",
-    "static/js/main.373ba51b.js"
+    "static/css/main.099bf8ba.css",
+    "static/js/main.1c60537f.js"
   ]
 }
