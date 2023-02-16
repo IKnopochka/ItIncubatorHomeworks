@@ -19,7 +19,8 @@ const HW6 = () => {
     }
     const restore = () => {
         // делают студенты
-
+        const defaultState = localStorage.getItem('hw6-editable-span-value')
+        if(defaultState) setValue(restoreState<string>('hw6-editable-span-value', defaultState))
     }
 
     return (

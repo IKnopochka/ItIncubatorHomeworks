@@ -6,8 +6,8 @@
 .input {
     border: 3px solid #519696;
     border-radius: 10px;
-    min-height: 30px;
-    min-width: 100px;
+    height: 30px;
+    width: 200px;
 }
 
 .inputWrapper {
