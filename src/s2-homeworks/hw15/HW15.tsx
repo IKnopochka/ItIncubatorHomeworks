@@ -52,10 +52,12 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
-                //
+                if (res?.data.techs) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                }
+                setLoading(false)
             })
     }
 
@@ -64,11 +66,12 @@ const HW15 = () => {
 
         // setPage(
         // setCount(
-
+        setPage(newPage)
+        setCount(newCount)
         // sendQuery(
         // setSearchParams(
-
-        //
+        sendQuery({page: newPage, count: newCount})
+        setSearchParams([["page", `${newPage}`], ["count", `${newCount}`]])
     }
 
     const onChangeSort = (newSort: string) => {
@@ -76,7 +79,10 @@ const HW15 = () => {
 
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setSort(newSort)
+        setPage(1)
+        sendQuery({page: 1, count: count})
+        setSearchParams([["page", '1'], ["count", `${count}`]])
         // sendQuery(
         // setSearchParams(
 
